@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{ 
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: serif;
+}
+nav{
+    position: fixed;
+    top: 25px;
+    height: 50px;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid black;
+}
+nav h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+nav h1 a{
+    color: black;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    text-align: center;
+    list-style: none;
+    margin: 0 13px 0 25px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a i{
+    position: relative;
+    top: 3px;
+    right: 2px;
+    text-decoration: none;
+}
+nav .three-line{
+    display: none;
+}
+nav .mobile-menu{
+    display: none;
+}
+
+
+
+.home{
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding:110px 75px 0 75px;
+}
+.home .image{
+    margin: auto; 
+}
+.home img{
+    height: 500px;
+    width: 500px;
+    width: 100%;
+    border-radius: 50%;
+}
+.home .mobile_image{
+    display: none;
+}
+.home .intro{
+    height: auto;
+    width: 550px;
+    margin: auto;
+}
+.home .intro h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.home .intro h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.home .intro .experience{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 3px 0 3px 0;
+    text-align: justify;
+}
+.home button{
+    margin: 10px 20px 0 0;
+    font-size: 20px;
+}
+.home .Download{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.home .Download:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.Download a{
+    text-decoration: none;
+    color: black;
+}
+.home .Hire{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.home .Hire:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.Hire a{
+    text-decoration: none;
+    color: white;
+}
+.Hire i, .Download i{
+    position: relative;
+    top: 3px;
+    right: 2px;    
+}
+.home .intro hr {
+    margin: 20px 0 20px 0;
+}
+.socialmedia_logo{
+    font-size: 45px;
+    color: black;
+    margin-right: 50px;
+}
+.ri-linkedin-box-fill:hover{
+    color: rgb(10, 102, 163);
+    transition: 0.3s;
+}
+.ri-facebook-circle-fill:hover{
+    color: rgb(10, 10, 163);
+    transition: 0.3s;
+}
+.ri-whatsapp-line:hover{
+    color: rgb(6, 158, 6);
+    transition: 0.3s;
+}
+.ri-instagram-line:hover{
+    color: rgb(194, 20, 188);
+    transition: 0.3s;
+}
+.ri-github-fill:hover{
+    color: grey;
+    transition: 0.3s;
+}
+
+
+.about{
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding:130px 75px 0 75px;
+}
+.about .image{
+    margin: 0 10px 0 60px;
+}
+.about img{
+    width: 100%;
+    width: 400px;
+    border-radius: 20px;
+}
+.about .description{
+    width: 850px;
+    margin: 0 0 0 20px;
+}
+.about .description h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.about .description hr{
+    width: 300px;
+    margin: 5px 0 0 0 ;
+}
+.about .description .para{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+    text-align: justify;
+}
+.description div{
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+    padding: 0 5px 0 5px;
+    transition: 3s;
+    transition: 0.5s ease;
+}
+.description div:hover{
+    transform: translateY(-10px);
+}
+.derives{
+    margin-top: 15px;
+}
+.languages{
+    height: 100px;
+    width: 180px;
+    text-align: justify;
+}
+.education{
+    height: 100px;
+    width: 330px;
+}
+.completed_project{
+    height: 100px;
+    width: 250px;
+}
+.description h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 5px;
+}
+.description h2 i{
+    position: relative;
+    top: 5px;
+    right: 2px;
+    font-size: 30px;
+}
+.description h2 span{
+    font-size: 35px;
+    position: relative;
+    top: 8px;
+}
+.description .education h2{
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 0;
+}
+
+
+
+.project{
+    height: 600px;
+    width: auto;
+    padding:100px 75px 0 75px;
+}
+.project .info h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.project .info hr{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+.project .info p {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: serif;
+}
+.project .box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    place-items: center;
+}
+.box1, .box2, .box3{
+    height: 400px;
+    width: 340px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 1px black;
+    padding: 10px;
+}
+.box1 img, .box2 img, .box3 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.box1 hr, .box2 hr, .box3 hr{
+    margin: 10px 0 5px 0;
+}
+ .box1 p, .box2 p, .box3 p{
+    font-size: 20px;
+    text-align: justify;
+}
+.box1 h2, .box2 h2, .box3 h2{
+    text-align: center;
+    color: rgb(0, 0, 163);
+}
+.language_uesd{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.language_uesd span{
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    background-color: rgb(0, 0, 163, 0.1);
+    color: rgb(0, 0, 163);
+    border-radius: 2px;
+    font-size: 15px;
+    margin:5px 5px 0 0;
+}
+.box .button{
+    display: flex;
+    justify-content: center;
+    position:relative ;
+    top: 23px;
+}
+.box .button button a{
+    color: white;
+}
+.box .button button{
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 2px 7px 3px 7px;
+    background-color: rgb(0, 0, 163);
+    color: white;
+    border: 2px solid rgb(0, 0, 163);
+    border-radius: 30px;
+}
+.box .button button i{
+    position: relative;
+    top: 2px;
+    right: 2px;    
+}
+
+
+
+.contact{
+    padding:110px 75px 50px 75px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+.location{
+    margin: auto;
+    margin-top: 0%;
+    font-size: 20px;
+}
+.location h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.location .touch{
+    color: rgb(0, 0, 166);
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.location .line{
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+.location p{
+    margin-bottom: 15px;
+}
+.location p i{
+    position: relative;
+    top: 4px;
+    right: 2px;
+    color: rgb(0, 0, 166);
+    font-size: 25px;
+}
+.message{
+    margin: auto;
+    margin-top: 0%;
+}
+.message input{
+    width: 450px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.message .button{
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+}
+.message textarea{
+    width: 450px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+footer{
+    text-align: center;
+    height: 220px;
+    background-color: black;
+}
+
+
+

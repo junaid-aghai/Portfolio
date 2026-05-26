@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading-bar{
+            width: 200px;    
+            height: 10px;
+            border: 2px solid #000;
+            border-radius: 50px;
+            overflow: hidden;
+
+            /* Gradient: [Fill Color 50%] [Empty Color 50%] */
+            background: linear-gradient(to right, #000000 50%, #f9f9f9 50%);
+            
+            /* Make the background 2x the width of the div */
+            background-size: 200% 100%;
+            
+            /* Start with the right half (the empty color) visible */
+            background-position: right bottom;
+            
+            /* Animate to the left */
+            animation: fill-animation 2s ease-in-out forwards;
+            }
+
+            @keyframes fill-animation {
+            to {
+                background-position: left bottom;
+            }
+        }
+        .loading-title{
+            margin-top: calc(50vh - 150px);
+        }
+
+    </style>
+</head>
+<body class="loading">
+    <h1 class="loading-title">Portfolio</h1>
+    <div class="loading-bar"> </div>
+    <script>
+        setTimeout(function(){
+            window.location.href = "/portfolio";
+        }, 1750);
+    </script>
+</body>
+</html>
